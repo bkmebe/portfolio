@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Biruk Fikadu — Web Developer</title>
+		<meta name="description" content="Portfolio of Biruk Fikadu — web developer. Shows projects, skills and contact." />
+		<link rel="stylesheet" href="style.css">
+        <!-- EmailJS SDK (replace with latest if needed) -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	</head>
+	<body>
+		<a class="skip-link" href="#mainContent">Skip to content</a>
+		<header class="site-header">
+			<div class="container header-inner">
+					<a class="brand" href="#">Biruk Fikadu</a>
+				<button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
+					<nav id="siteNav" class="site-nav" aria-label="Primary Navigation">
+						<a href="#about">About</a>
+						<a href="#projects">Projects</a>
+						<a href="#skills">Skills</a>
+						<a href="#contact">Contact</a>
+					</nav>
+			</div>
+		</header>
+
+		<main id="mainContent">
+			<section class="hero reveal">
+				<div class="container hero-inner">
+					<div class="hero-text">
+						<p class="eyebrow">Hi, I&apos;m</p>
+						<h1 class="name">Biruk Fikadu</h1>
+						<p class="lead">Professional web developer building modern, high-performance web applications with a focus on clean code, scalability, and user experience.</p>
+						<p class="hero-ctas">
+							<a class="btn" href="#projects">See my work</a>
+							<a class="btn btn-primary" href="tel:+251936610432">Order Now</a>
+						</p>
+					</div>
+					<div class="hero-photo" aria-hidden="true">
+						<div class="photo-frame">
+							  <img src="images/photo1.png" alt="Profile photo" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="container about reveal">
+				<h2>About</h2>
+				<p>I am a professional web developer specializing in building modern, scalable, and high-performance web applications. I focus on writing clean, maintainable code and creating user-centered digital experiences that are both visually appealing and technically sound.</p>
+
+				<p>With a strong understanding of modern frontend and backend technologies, I develop solutions that prioritize performance, security, and usability. I am committed to delivering reliable, efficient, and future-ready web products that help businesses grow and succeed online.</p>
+			</section>
+
+			<section id="projects" class="container projects">
+				<h2 class="reveal">Projects</h2>
+				<div class="project-grid">
+					<article class="project-card reveal" data-title="Web Application Dashboard" data-desc="A modern web dashboard designed for managing data efficiently. Focused on clarity, usability, and performance with a clean interface and structured layout.&#10;&#10;Features:&#10;Data visualization&#10;Clean UI components&#10;Responsive dashboard design">
+						<img src="images/photo2.png" alt="Project one screenshot">
+						<h3>Web Application Dashboard</h3>
+						<p class="muted">React · JavaScript · NODE</p>
+					</article>
+
+					<article class="project-card reveal" data-title="E-Commerce Website" data-desc="A fully responsive e-commerce website focused on usability and conversion. Includes product listings, shopping cart functionality, and a streamlined checkout experience.&#10;&#10;Features:&#10;Product management&#10;Cart &amp; checkout system&#10;Secure and user-friendly UI">
+						<img src="images/photo3.png" alt="Project two screenshot">
+						<h3>E-Commerce Website</h3>
+						<p class="muted">CSS3 · HTML5 · JavaScript</p>
+					</article>
+
+					<article class="project-card reveal" data-title="Modern Business Website" data-desc="A clean and professional business website designed to establish a strong online presence. Built with a responsive layout, fast loading speed, and clear content structure to improve user engagement and trust.&#10;&#10;Features:&#10;Responsive design&#10;SEO-friendly structure&#10;Modern UI/UX">
+						<img src="images/photo4.png" alt="Project three screenshot">
+						<h3>Modern Business Website</h3>
+						<p class="muted">CSS3 · HTML5 · NODE</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="skills" class="container skills reveal">
+				<h2>Skills</h2>
+				<ul class="skill-list">
+					<li>HTML & CSS</li>
+					<li>JavaScript (ES6+)</li>
+					<li>React.js</li>
+					<li>Next.js</li>
+					<li>Node.js & Express.js</li>
+					<li>RESTful APIs</li>
+					<li>Database Management (MongoDB / PostgreSQL)</li>
+					<li>Performance Optimization</li>
+					<li>Accessibility</li>
+				</ul>
+			</section>
+
+			<section id="contact" class="container contact reveal">
+				<h2>Contact</h2>
+				<div class="contact-grid">
+					<form id="contactForm" class="contact-form">
+						<label for="name">Name</label>
+						<input id="name" name="name" type="text" required>
+
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" required>
+
+						<label for="message">Message</label>
+						<textarea id="message" name="message" rows="5"></textarea>
+
+						<button class="btn" type="submit">Send message</button>
+						<div id="formMsg" class="form-msg" role="status" aria-live="polite"></div>
+					</form>
+
+					<div class="contact-info" aria-hidden="false">
+						<div class="contact-cards">
+							<!-- Email card -->
+							<div class="contact-card">
+								<div class="card-media" aria-hidden="true">
+									<!-- mail icon -->
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 7.5l-9 6-9-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+								<div class="card-body">
+									<h4>Email</h4>
+									<p><a href="mailto:birukfikadu246@gmail.com">birukfikadu246@gmail.com</a></p>
+									<div class="card-actions">
+										<a class="contact-cta" href="mailto:birukfikadu246@gmail.com">Email me</a>
+										<button class="copy-btn" data-copy="birukfikadu246@gmail.com" aria-label="Copy email">Copy</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Phone card -->
+							<div class="contact-card">
+								<div class="card-media" aria-hidden="true">
+									<!-- phone icon -->
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.9.36 1.77.7 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.49a2 2 0 0 1 2.11-.45c.82.34 1.69.58 2.59.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+								<div class="card-body">
+									<h4>Phone</h4>
+									<p><a href="tel:+251936610432">+251936610432</a><br><a href="tel:+251945658558">+251945658558</a></p>
+									<div class="card-actions">
+										<a class="contact-cta" href="tel:+251936610432">Call</a>
+										<a class="contact-cta order-cta" href="tel:+251936610432">Order Now</a>
+										<button class="copy-btn" data-copy="+251936610432, +251945658558" aria-label="Copy phone numbers">Copy</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Location card -->
+							<div class="contact-card">
+								<div class="card-media" aria-hidden="true">
+									<!-- map pin icon -->
+									<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5" fill="currentColor"/></svg>
+								</div>
+								<div class="card-body">
+									<h4>Location</h4>
+									<p>Adama, Oromia, Ethiopia</p>
+									<div class="card-actions">
+										<a class="contact-cta" href="https://www.google.com/maps/search/Adama+Oromia+Ethiopia" target="_blank" rel="noopener">View map</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+			<footer class="site-footer">
+				<div class="container footer-inner">
+					<div class="footer-left">
+						<small>© <span id="year"></span> Biruk Fikadu — Built with HTML, CSS & JavaScript</small>
+						<div class="footer-contact">
+							<a href="mailto:birukfikadu246@gmail.com">birukfikadu246@gmail.com</a>
+							<span class="sep">·</span>
+							<a href="tel:+251936610432">+251936610432</a>
+						</div>
+					</div>
+					<div class="footer-right">
+						<nav class="social social-icons" aria-label="Social links">
+							<!-- Replace the href="#" values with your actual profile links -->
+							<a class="social-btn" href="https://www.linkedin.com/in/biruk-fikadu-20448b362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+ " data-platform="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+								<!-- LinkedIn -->
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.98h5v15H0v-15zM9 8.98h4.78v2.05h.07c.66-1.25 2.27-2.57 4.68-2.57C23.06 8.45 24 10.52 24 14.02V23H19v-8.1c0-1.93-.04-4.4-2.68-4.4-2.69 0-3.1 2.1-3.1 4.27V23H9v-14.02z" fill="currentColor"/></svg>
+							</a>
+							<a class="social-btn" href="https://www.facebook.com/share/1GF9zBsXcg/" data-platform="facebook" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+								<!-- Facebook -->
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.94v-7.04H8.24v-2.9h2.2V9.41c0-2.17 1.3-3.36 3.28-3.36.95 0 1.94.17 1.94.17v2.13h-1.09c-1.07 0-1.4.66-1.4 1.34v1.61h2.38l-.38 2.9h-2v7.04c4.78-.81 8.44-4.95 8.44-9.94z" fill="currentColor"/></svg>
+							</a>
+							<a class="social-btn" href="https://www.tiktok.com/@codewithbura" data-platform="tiktok" title="TikTok" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+								<!-- TikTok (simple note icon) -->
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 3v10.05A5 5 0 1 1 13 16V8h4V3z" fill="currentColor"/></svg>
+							</a>
+							<a class="social-btn" href="https://www.instagram.com/bk_mebe/" data-platform="instagram" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+								<!-- Instagram -->
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zM18.5 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1z" fill="currentColor"/></svg>
+							</a>
+							<a class="social-btn" href="mailto:birukfikadu246@gmail.com" data-platform="email" title="Email" aria-label="Email" target="_blank" rel="noopener noreferrer">
+								<!-- Email -->
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M21 7.5l-9 6-9-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+							</a>
+							</nav>
+						<a class="back-top" href="#mainContent">Back to top ↑</a>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Project modal -->
+		<div id="projectModal" class="modal" aria-hidden="true">
+			<div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+				<button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+				<h3 id="modalTitle"></h3>
+				<p id="modalDesc"></p>
+			</div>
+
+			<!-- Floating Order CTA -->
+			<a id="orderNowFloat" class="floating-cta" href="tel:+251936610432" aria-label="Order now">Order Now</a>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
